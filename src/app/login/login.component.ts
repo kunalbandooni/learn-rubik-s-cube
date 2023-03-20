@@ -64,11 +64,18 @@ export class LoginComponent implements OnInit{
     alert("ADDED USER");
   }
 
+  user: string = "";
+  pass: string = "";
   onLogin(){
-    const isUserExist = this.signUpUsers.find(m => m.username == this.loginObj.username && m.password == this.loginObj.password);
-    if(isUserExist != undefined)
+    //const isUserExist = this.signUpUsers.find(m => m.username == this.loginObj.username && m.password == this.loginObj.password);
+    //if(isUserExist != undefined)
+    
+    let count = true;
+    if(this.user == "admin" && this.pass == "admin"){
+      count = false;
       this.router.navigate(['/Home']);
-    else
+    }
+    if(count == true)
       alert("NOT A VALID USER");
   }
 }
