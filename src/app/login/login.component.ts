@@ -20,10 +20,6 @@ export class LoginComponent implements OnInit{
     this.registerationActive = false;
   }
 
-  try(){
-    alert("YES");
-  }
-
   // to activate registeration form
   displayRegisterationForm(){
     this.loginActive = false;
