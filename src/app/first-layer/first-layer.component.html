@@ -1,0 +1,224 @@
+<div class="container put-center">
+    <div class="no-hover-card">
+        <div class="put-center">
+            <h2>FIRST LAYER</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="padding-top: 20px;">
+    <div class="put-center">
+        <table>
+            <tr>
+                <td>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/flipped-edge.png" class="card-img-top" alt="First layer of the Rubik's Cube">
+                            <div class="card-body">
+                                <h5 class="card-title">Flipped Edge</h5>
+                                <p class="card-text">
+                                    To “flip the edge,” White tile is on the UP face, hold your Rubik's Cube so edge needed to be flipped is on the RIGHT(R)
+                                </p>
+                                <button class="btn" (click)="openPopup(0)"><a class="nav-link">How to...</a></button>
+                                <!-- Vertically centered modal -->
+                                <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle[0]}">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Flipped Edge</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>To “flip the edge,” White tile is on the UP face, hold your Rubik's Cube so edge needed to be flipped is on the RIGHT(R)</p>
+                                                <img src="./assets/flipped-edge-solve.png" alt="flipped-edge-solution"/>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" (click)="closePopup(0)">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/corner-piece-check.png" class="card-img-top" alt="Corner Piece Check">
+                            <div class="card-body">
+                                <h5 class="card-title">Corner Piece Check</h5>
+                                <p class="card-text">
+                                    If your corner piece is in the top layer but not in the correct location then, follow these steps to get that piece to the bottom layer.
+                                </p>
+                                <button class="btn" (click)="openPopup(1)"><a class="nav-link">How to...</a></button>
+                                <!-- Vertically centered modal -->
+                                <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle[1]}">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Corner Piece Check</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    If your corner piece is in the top layer but not in the correct location then, follow these steps to get that piece to the bottom layer.
+                                                </p>
+                                                <img src="./assets/corner-piece-check-sol.png" alt="Solution"/>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" (click)="closePopup(1)">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </td>
+                <td>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/correct-placement.png" class="card-img-top" alt="Correct Placement">
+                            <div class="card-body">
+                                <h5 class="card-title">Correct Corner Placement</h5>
+                                <p class="card-text">
+                                    Rotate the DOWN(D) face until the corner is between the two matching colored center tiles.
+                                </p>
+                                <button class="btn" (click)="openPopup(2)"><a class="nav-link">How to...</a></button>
+                                <!-- Vertically centered modal -->
+                                <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle[2]}">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Correct Corner Placement</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Rotate the DOWN(D) face until the corner is between the two matching colored center tiles.</p>
+                                                <img src="./assets/correct-placement-sol.png" alt="correct-placement-solution"/>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" (click)="closePopup(2)">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="col">
+                        <br>
+                        <div class="card">
+                            <img src="./assets/first-layer-corner-right-2.png" class="card-img-top" alt="Face Corner Right">
+                            <div class="card-body">
+                                <h5 class="card-title">Face Corner Right</h5>
+                                <p class="card-text">
+                                    Hold your Rubik's cube such that, the White tile is on the right(R). Then follow the algorithm.
+                                </p>
+                                <button class="btn" (click)="openPopup(3)"><a class="nav-link">How to...</a></button>
+                                <!-- Vertically centered modal -->
+                                <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle[3]}">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Face Corner Right</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Hold your Rubik's cube such that, the White tile is on the right(R). Then follow the algorithm.</p>
+                                                <img src="./assets/first-layer-corner-right-2-sol.png" alt="face-corner-solution"/>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" (click)="closePopup(3)">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/first-layer-corner-1.png" class="card-img-top" alt="First Layer Corner">
+                            <div class="card-body">
+                                <h5 class="card-title">First Layer Corner</h5>
+                                <p class="card-text">
+                                    Hold your Rubik's Cube with the corner on the RIGHT face. Follow this algorithm.
+                                </p>
+                                <button class="btn" (click)="openPopup(4)"><a class="nav-link">How to...</a></button>
+                                <!-- Vertically centered modal -->
+                                <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle[4]}">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">First Layer Corner</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Hold your Rubik's Cube with the corner on the RIGHT face. Follow this algorithm.</p>
+                                                <p style="font-weight: bold;">
+                                                    Make sure to do these steps twice.
+                                                    <br> 
+                                                    Then, do <span style="color:blueviolet;">FACE CORNER</span> steps.
+                                                </p>
+                                                <img src="./assets/first-layer-corner-1-sol.png" alt="face-corner-solution"/>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" (click)="closePopup(4)">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/first-layer-corner-2.png" class="card-img-top" alt="First layer corner 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Face Corner Left</h5>
+                                <p class="card-text">
+                                    Hold your Rubik's cube such that, the White tile is on the left(L). Then follow the algorithm.
+                                </p>
+                                <button class="btn" (click)="openPopup(5)"><a class="nav-link">How to...</a></button>
+                                <!-- Vertically centered modal -->
+                                <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle[5]}">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Face Corner Left</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Hold your Rubik's cube such that, the White tile is on the left(L). Then follow the algorithm.</p>
+                                                <img src="./assets/first-layer-corner-2-sol.png" alt="first-layer-corner-2-solution"/>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" (click)="closePopup(5)">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

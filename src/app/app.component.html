@@ -1,0 +1,47 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"></span>
+        <img class="navbar-brand" src="./assets/logo.png" alt="logo"/>
+    </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-right">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/First-Layer">First Layer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/Second-Layer">Second Layer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/Third-Layer">Third Layer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/Timer">Timer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/Login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/Contact-Us">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+<br>
+
+<body>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</body>
+
+<br>
+
+<footer>
+  <p>Copyright 2023. All rights reserved </p>
+</footer>

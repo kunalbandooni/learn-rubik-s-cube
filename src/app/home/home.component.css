@@ -1,0 +1,61 @@
+/*
+*   Color combination...
+*   a2d5f2
+*   008080
+*   1c2541
+*   228b22
+*   fff8dc
+*/
+
+.put-center{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.no-hover-card{
+    color: #fff8dc;
+    background-color: #1c2541;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    position: relative;
+    padding: 15px;
+}
+
+.card{
+    color: #fff8dc;
+    background-color: #1c2541;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    position: relative;
+    padding: 15px;
+}
+
+.card:hover{
+    background-color: rgb(129, 5, 5);
+}
+
+button{
+    margin: 3px;
+    padding: 2px;
+    background-color: #039292;
+}
+
+button:hover{
+    background-color: #ef2e24;
+}
+
+a{
+    color: #fff8dc;
+}
+
+a:hover{
+    transition: 0.4s;
+    color: #fff8dc;
+}

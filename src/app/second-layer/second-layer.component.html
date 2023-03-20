@@ -1,0 +1,119 @@
+<div class="container put-center">
+    <div class="no-hover-card">
+        <div class="put-center">
+            <h2>SECOND LAYER</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="padding-top: 20px;">
+    <div class="put-center">
+        <table>
+            <tr>
+                <td>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/moving-left.png" class="card-img-top" alt="Moving Left">
+                            <div class="card-body">
+                                <h5 class="card-title">Moving Left</h5>
+                                <p class="card-text">
+                                    If you are moving edge piece to the left, follow these moves:
+                                </p>
+                                <button class="btn" (click)="openPopup(0)"><a class="nav-link">How to...</a></button>
+                                <!-- Vertically centered modal -->
+                                <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle[0]}">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Moving Left</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    If you are moving edge piece to the left, follow these moves:</p>
+                                                <img src="./assets/moving-left-sol.png" alt="Moving-left-solution"/>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" (click)="closePopup(0)">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/moving-right.png" class="card-img-top" alt="Corner Piece Check">
+                            <div class="card-body">
+                                <h5 class="card-title">Moving Right</h5>
+                                <p class="card-text">
+                                    If you are moving edge piece to the left, follow these moves:
+                                </p>
+                                <button class="btn" (click)="openPopup(1)"><a class="nav-link">How to...</a></button>
+                                <!-- Vertically centered modal -->
+                                <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle[1]}">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Moving Right</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    If you are moving edge piece to the left, follow these moves:
+                                                </p>
+                                                <img src="./assets/moving-right-sol.png" alt="Solution"/>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" (click)="closePopup(1)">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </td>
+                <td>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/mismatched-edge.png" class="card-img-top" alt="Correct Placement">
+                            <div class="card-body">
+                                <h5 class="card-title">Mismatched Edge</h5>
+                                <p class="card-text">
+                                    Hold your Rubik's Cube so the mismatched edge in the middle layer is on the RIGHT face.
+                                </p>
+                                <button class="btn" (click)="openPopup(2)"><a class="nav-link">How to...</a></button>
+                                <!-- Vertically centered modal -->
+                                <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle[2]}">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Mismatched Edge</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Hold your Rubik's Cube so the mismatched edge in the middle layer is on the RIGHT face.</p>
+                                                <img src="./assets/moving-right-sol.png" alt="correct-placement-solution"/>
+                                                <p>Now, follow any of the moving left or right, whatever suits.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" (click)="closePopup(2)">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

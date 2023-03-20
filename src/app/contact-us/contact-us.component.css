@@ -1,0 +1,52 @@
+input{
+    margin:3px;
+}
+
+h2{
+    margin-top: 10px;
+}
+
+#contact {
+    color: white;
+    background-color: #001828;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    min-height: 300px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.contact-form{
+    padding-right: 0px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.tm-input {
+    margin: 0 0 10px 0;
+    width: 90%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+  
+.tm-btn-submit {
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #369;
+    width: 50%;
+    margin-bottom: 5px;
+}
+  
+.tm-btn-submit:hover {
+    color: #fff;
+    background-color: #38B;
+}

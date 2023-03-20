@@ -1,0 +1,37 @@
+.center{
+    text-align: center;
+}
+
+span{
+    color: rgb(230, 23, 23);
+    font-weight: bold;
+}
+
+button{
+    margin: 5px;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.put-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    color: white;
+    background-color: #001828;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    min-height: 300px;
+    width: 700px;
+    height: auto;
+    position: relative;
+    padding: 15px;
+}
+
