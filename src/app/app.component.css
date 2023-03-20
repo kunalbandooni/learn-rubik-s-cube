@@ -3,6 +3,7 @@ body{
     background-image: url('../assets/bg-img-t.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: blanchedalmond;
 }
 
 /*----- Header -----*/
