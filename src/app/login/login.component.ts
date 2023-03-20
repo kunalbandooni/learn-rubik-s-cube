@@ -67,15 +67,12 @@ export class LoginComponent implements OnInit{
   user: string = "";
   pass: string = "";
   onLogin(){
-    //const isUserExist = this.signUpUsers.find(m => m.username == this.loginObj.username && m.password == this.loginObj.password);
-    //if(isUserExist != undefined)
-    
-    let count = true;
-    if(this.user == "admin" && this.pass == "admin"){
-      count = false;
+    const isUserExist = this.signUpUsers.find(m => m.username == this.user && m.password == this.pass);
+    if(isUserExist != undefined){
       this.router.navigate(['/Home']);
     }
-    if(count == true)
+    else{
       alert("NOT A VALID USER");
+    }
   }
 }
